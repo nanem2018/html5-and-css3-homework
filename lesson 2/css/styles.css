@@ -3,6 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 } */
+/* подключение шрифта Arial MT через локальную папку файлом .ttf */
+@font-face{
+
+font-family: 'Arial MT';
+
+url('../fonts/arialmt.ttf') format('truetype'),
+
+font-weight: normal;
+
+font-style: normal;
+
+}
 
 body {
   margin: 0;
@@ -59,7 +71,6 @@ body {
   display: block;
   width: 25px;
   height: 19px;
-  /* border: 1px solid white; */
   position: absolute;
   top: 7px;
   left: -37px;
@@ -78,3 +89,147 @@ background-image:url(../img/Slice_3.png);
   height: 214px;
   float: right;
 }
+.container-section {
+  width: 1280px;
+	margin-bottom: 50px;
+  }
+
+
+.section-header{
+  width: 100%;
+  min-height: 345px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color:#ffffff;
+	
+}
+
+.section-information-wrapper{
+	width: 1280px;
+	float: left;
+	
+}
+
+
+/* оформление для "About your" */
+.title-section{
+	display: block;
+	width: 254px;
+	height: 28px;
+	color: #445161;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 49px 0px 50px 50px;
+	float: left;
+}
+
+/* для параграфа задается оформление*/
+
+.paragraph-text{
+	display: block;
+	width: 649px;
+	height: 63px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	float: left;
+	padding-left: 50px;
+	clear: both;
+}
+
+
+/* оформление для "video" */
+.section-product-video{
+	display: block;
+	background-color: #445161;
+	float: left;
+	margin: -160px 50px 0px 50px;*/
+	/*position: relative;*/
+	
+	}
+
+.section-dignity-wrapper{
+/* Style for "background" */
+width: 1280px;
+min-height:422px;
+background-color: #f5f5f5;
+
+}
+
+/* Style for "Dignity an" */
+.section-dignity-wrapper-title{
+margin-top: 100px;
+width: 351px;
+height: 28px;
+color: #445161;
+font-family: "Arial";
+font-size: 30px;
+font-weight: 400;
+line-height: 36px;
+display: block;
+float: left;
+padding: 50px 465px 29px 464px;
+/*margin-top: 100px;
+padding-bottom: 29px;	*/
+}
+
+/* стиль для левой колонки*/
+.left-side-dignity{
+float: left;
+width: 526px;
+height: 63px;
+color: #333333;
+font-family: "Arial";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+padding: 9px 3px 0px 50px;
+box-sizing: border-box;
+}
+
+/*стиль для правой колонки*/
+.right-side-dignity{
+float: right;
+width: 526px;
+height: 63px;
+color: #333333;
+font-family: "Arial";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+/*padding: 9px 3px 0px 0px;*/
+margin: 9px 35px 23px 51px;
+box-sizing: border-box;
+}
+.section-dignity-list-item {
+  	position: relative;
+	list-style-type: none;
+	margin-top: 23px;
+}
+
+.section-dignity-list-item:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 7px;
+  left: -37px;
+	
+  
+background-image:url(../img/Slice_1.png);
+ -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+  summary::-webkit-details-marker {
+  display: none;
+}
+
