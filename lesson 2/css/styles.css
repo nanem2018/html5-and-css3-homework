@@ -17,12 +17,14 @@ font-style: normal;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+
 }
 
 .container {
   width: 1280px;
   border: 1px solid black;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -35,6 +37,7 @@ body {
 
 .main-header-wrapper {
   float: left;
+  margin: 0 auto;
 }
 
 .main-header-title {
@@ -91,7 +94,8 @@ background-image:url(../img/Slice_3.png);
 }
 .container-section {
   width: 1280px;
-	margin-bottom: 50px;
+  margin-bottom: 50px;
+  margin: 0 auto;
   }
 
 
@@ -151,85 +155,135 @@ background-image:url(../img/Slice_3.png);
 	/*position: relative;*/
 	
 	}
-
-.section-dignity-wrapper{
-/* Style for "background" */
-width: 1280px;
-min-height:422px;
-background-color: #f5f5f5;
-
+.pluses {
+    width: 1280px;
+  	margin: 0 auto;
+  	padding: 20px;
+  	background-color: #f5f5f5;
+	margin-top: 50px;
+  	display: flex;
+  	flex-wrap: wrap;
 }
 
-/* Style for "Dignity an" */
-.section-dignity-wrapper-title{
-margin-top: 100px;
-width: 351px;
-height: 28px;
-color: #445161;
-font-family: "Arial";
-font-size: 30px;
-font-weight: 400;
-line-height: 36px;
-display: block;
-float: left;
-padding: 50px 465px 29px 464px;
-/*margin-top: 100px;
-padding-bottom: 29px;	*/
-}
-
-/* стиль для левой колонки*/
-.left-side-dignity{
-float: left;
-width: 526px;
-height: 63px;
-color: #333333;
-font-family: "Arial";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-padding: 9px 3px 0px 50px;
-box-sizing: border-box;
-}
-
-/*стиль для правой колонки*/
-.right-side-dignity{
-float: right;
-width: 526px;
-height: 63px;
-color: #333333;
-font-family: "Arial";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-/*padding: 9px 3px 0px 0px;*/
-margin: 9px 35px 23px 51px;
-box-sizing: border-box;
-}
-.section-dignity-list-item {
-  	position: relative;
-	list-style-type: none;
-	margin-top: 23px;
-}
-
-.section-dignity-list-item:before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  top: 7px;
-  left: -37px;
+.pluses-title {
 	
-  
-background-image:url(../img/Slice_1.png);
- -webkit-background-size: contain;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+	width: 100%;
+	display: block;
+	text-align: center;
+  	margin: 0 0 10px 0;
+  	color: #445161;
+  	font-family: "Arial";
+  	font-size: 30px;
+  	font-weight: 400;
+  	line-height: 36px;
+
+}
+
+.pluses-list-wrapper {
+  	width: 50%;
+}
+
+.pluses-list summary {
+  	outline: none;
+	padding-left: 40px;
+}
+
+.pluses-list{
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+.pluses-list:before {
+  	content: "";
+  	display: block;
+  	width: 32px;
+  	height: 32px;
+  	position: absolute;
+ /* top: 7px;
+  left: -37px;*/
+  	background-image:url(../img/Slice_1.png);
+	 -webkit-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	border: 1px solid green;	
 }
 
 
   summary::-webkit-details-marker {
-  display: none;
+  	display: none;
 }
 
+/* Style for Scrinshots */
+
+
+.parent{
+	margin: 0 auto;
+	display: flex;	
+	width: 1280px;
+	min-height: 487px;
+	flex-wrap: wrap;
+	align-content:flex-start;
+	justify-content: space-evenly;
+	clear: both;
+	margin-top: 50px;
+	
+	
+}
+	/* Style for title "Scrinshots" */
+.title-section-scrinshots{
+	width: 100%;
+  	display: block;
+  	text-align: center;
+  	margin: 0 0 10px 0;
+  	color: #445161;
+  	font-family: "Arial";
+  	font-size: 30px;
+  	font-weight: 400;
+  	line-height: 36px;
+
+
+		
+}
+/* Style for "Pariatur i" */
+.child-img{
+	width: 200px;
+	height: 150px;
+	color: #333333;	
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top:35px; 
+	margin-left: 51px;
+	
+}
+.child-text-one{
+	width: 359px;
+	
+	color: #333333;	
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+	
+}
+.child-text-two{
+	width: 349px;
+	color: #333333;	
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+	
+}
