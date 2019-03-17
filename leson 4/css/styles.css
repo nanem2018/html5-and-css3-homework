@@ -1,0 +1,874 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+/* подключение шрифта Arial MT через локальную папку файлом .ttf */
+@font-face {
+
+	font-family: 'Arial MT';
+
+	url('../fonts/arialmt.ttf') format('truetype'),
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+
+body {
+	margin: 0 auto;
+	width: 1280px;
+
+}
+
+main {
+
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 1280px;
+}
+
+
+.container {
+	width: 100%;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.main-header {
+	width: 100%;
+	min-height: 323px;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: #445161;
+}
+
+.main-header-wrapper {
+	float: left;
+	margin: 0 auto;
+}
+
+.main-header-title {
+	margin: 0;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 60px;
+	font-weight: 400;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.color-txt {
+	color: red;
+}
+
+.main-header-list {
+	list-style-type: none;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.main-header-list-item {
+	position: relative;
+}
+
+.main-header-list-item:before {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 19px;
+	position: absolute;
+	top: 7px;
+	left: -37px;
+
+	background-image: url(../img/Slice_3.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-header-product-photo {
+	display: block;
+	background-color: #ffffff;
+	width: 469px;
+	height: 214px;
+	float: right;
+}
+
+.container-section {
+	width: 100%;
+
+	min-height: 345px;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+
+
+
+.section-information-wrapper {
+	width: 100%;
+	float: left;
+}
+
+
+/* оформление для "About your" */
+.title-section {
+	display: block;
+	width: 254px;
+	height: 28px;
+	color: #445161;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 49px 0px 50px 50px;
+	float: left;
+}
+
+/* для параграфа задается оформление*/
+
+.paragraph-text {
+	display: block;
+	width: 649px;
+	height: 63px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	float: left;
+	padding-left: 50px;
+	clear: both;
+}
+
+
+/* оформление для "video" */
+.section-product-video {
+	display: block;
+	background-color: #445161;
+	float: left;
+	margin: -160px 0px 20px 30px;
+	*/
+	/*position: relative;*/
+
+}
+
+.pluses {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pluses-title {
+	width: 100%;
+	display: block;
+	text-align: center;
+	color: #445161;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 0 0 10px 0;
+}
+
+.pluses-list-wrapper {
+	width: 45%;
+}
+
+.pluses-list {
+	margin: 0 0 25px 0;
+}
+
+.pluses-list summary {
+	outline: none;
+}
+
+.pluses-list summary {
+	display: block;
+	position: relative;
+	padding: 0 0 0 40px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-left: 25px;
+}
+
+.pluses-list summary::-webkit-details-marker {
+	display: none
+}
+
+.pluses-list summary:before {
+	content: "+";
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-color: #445161;
+	font-size: 1.9em;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	top: 4px;
+	left: 0px;
+}
+
+details[open] summary:before {
+	content: "-";
+}
+
+
+
+/*Оформление блока krinshot*/
+
+
+.screenshots {
+	width: 100%;
+	padding: 50px 50px 20px 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.screenshots-title {
+	display: block;
+	width: 100%;
+	margin: 0 0 35px 0;
+	font-family: Arial;
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+}
+
+.screenshots-wrapper {
+	width: 574px;
+	margin: 0 0 30px 0;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.screenshots-photo {
+	display: block;
+	width: 200px;
+	height: 150px;
+	background-color: #445161;
+}
+
+.screenshots-photo-wrapper {
+	width: 359px;
+}
+
+.screenshots-photo-title {
+	display: block;
+	margin: 0 0 15px 0;
+	font-family: Arial;
+	color: #445161;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.screenshots-photo-txt {
+	margin: 0;
+	font-family: Arial;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: justify;
+}
+
+/*    конец оформления с урока  ----*/
+
+
+
+.reviews {
+	width: 100%;
+	padding: 50px 50px 20px 50px;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.reviews-title {
+	display: block;
+	width: 100%;
+	margin: 0 0 35px 0;
+	text-align: center;
+	height: 22px;
+	color: #445161;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.reviews-wrapper {
+	width: 574px;
+	margin: 0 0 30px 0;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	background-color: #f5f5f5;
+}
+
+.reviews-photo {
+	display: block;
+	width: 75px;
+	height: 75px;
+	background-color: #445161;
+	border-radius: 100px;
+	/* Радиус скругления */
+	border: 1px solid grey;
+	/* Параметры рамки */
+	/* box-shadow: 0 0 7px #666; /* Параметры тени */
+	margin-left: 50px;
+
+}
+
+.reviews-photo-wrapper {
+	width: 359px;
+}
+
+
+
+.reviews-photo-txt {
+	padding: 15px;
+	color: #333333;
+	font-family: "Arial";
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-align: justify;
+	margin: 0px 20px 41px -50px;
+	background-color: #ebebeb;
+	min-height: 121px;
+	border-radius: 7px;
+	padding: 20px;
+	position: relative;
+}
+
+.reviews-photo-txt::before,
+.reviews-photo-txt::after {
+	content: '';
+	position: absolute;
+	left: -40px;
+	bottom: 100px;
+	border: 20px solid transparent;
+	border-right: 20px solid #ebebeb;
+}
+
+/* .reviews-photo-txt::after {
+    border-top: 10px solid aqua;
+    bottom: -19px; 
+   }*/
+
+.reviews-photo-signature {
+	display: block;
+	margin: 0 0 0 10px;
+	width: 67px;
+	height: 10px;
+	color: #989898;
+	font-family: "Arial MT";
+	font-style: normal font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 15px;
+}
+
+/* Style for Scrinshots */
+.parent {
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+	min-height: 487px;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-evenly;
+	clear: both;
+	margin-top: 50px;
+
+
+}
+
+/* Style for title "Scrinshots" */
+.title-section-scrinshots {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 0 0 10px 0;
+	color: #445161;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+
+
+
+}
+
+/* Style for "Pariatur i" */
+.child-img {
+	width: 200px;
+	height: 150px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 35px;
+	margin-left: 51px;
+
+}
+
+.child-text-one {
+	width: 359px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+
+}
+
+.child-text-two {
+	width: 349px;
+	color: #333333;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+
+}
+
+/*.buyit{
+	width: 100%;
+	display: flex;
+	border:1px solid green;
+	min-height: 656px;
+	
+}
+
+*/
+.buyit {
+	display: flex;
+	/*	justify-content: space-evenly;*/
+	width: 100%;
+	min-height: 656px;
+	border: 1px solid black;
+	padding: 50px -50px 0 50px;
+	align-items: stretch;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
+}
+
+.buy-title {
+	display: block;
+	margin-top: 50px;
+	color: #445161;
+	width: 100%;
+	height: 28px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	align-self: flex-start;
+
+}
+
+
+.child-standart,
+.child-premium,
+.child-lux {
+	width: 300px;
+	margin: 5px;
+	background-color: #445162;
+	border: 1px solid black;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	border: 1px solid #445162;
+	border-radius: 10px;
+	align-self: flex-end;
+
+	/*justify-content: flex-end;*/
+}
+
+.price {
+	display: block;
+	background-color: #ffffff;
+	width: 300px;
+	height: 71px;
+	border: 2px solid #445162;
+	font-family: "Arial";
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #445162;
+	;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+
+}
+
+.child-standart {
+
+	min-height: 306px;
+
+}
+
+.child-premium {
+
+	min-height: 404px;
+}
+
+.child-lux {
+
+	min-height: 499px;
+}
+
+/* Style for "Buy it now" */
+
+
+.block-buy-title {
+	/* Style for "Premium" */
+	display: block;
+	width: 100%;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+.standart {
+	width: 300px;
+
+}
+
+
+.premium {
+	width: 300px;
+
+}
+
+.lux {
+	width: 300px;
+
+}
+
+form {
+	width: 100%
+}
+
+.button-buy {
+	/*width: 260px;*/
+	height: 40px;
+	background-color: #ffffff;
+	width: 90%;
+	margin: 1px;
+	margin-left: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+b {
+	width: 37px;
+	height: 13px;
+	color: #445161;
+	font-family: "Arial";
+	font-style: bold;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.footer {
+	width: 100%;
+	min-height: 509px;
+}
+
+/* Style for "Contacts" */
+.contacts-title {
+	display: block;
+	width: 100%;
+	padding: 53px 0px 31px 0px;
+	text-align: center;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	box-sizing: border-box;
+}
+
+input,
+textarea {
+	outline: none;
+	/* display: block */
+	;
+	padding: 0 0 0 5px;
+	margin: 0 0 10px 0;
+	height: 40px;
+	min-width: 500px;
+	border-radius: 10px;
+	margin-left: 249px;
+	margin-bottom: 21px;
+
+}
+
+/*
+input[type=text] {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	border: 1px solid #DDDDDD;
+}
+*/
+/* Style for "Your name:" */
+input[type=text]::-webkit-placeholder {
+	width: 82px;
+	height: 12px;
+	color: #445162;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	box-sizing: border-box;
+	margin-top: 18px;
+
+}
+
+textarea {
+	resize: none;
+	width: 82px;
+	height: 170px;
+	border-radius: 10px;
+	margin-left: 249px;
+	box-sizing: border-box;
+}
+
+
+textarea::-webkit-placeholder {
+	width: 84px;
+	height: 12px;
+	color: #445162;
+	font-family: "Arial";
+	font-size: 15px;
+	font-weight: 40;
+	line-height: 22px;
+	/*-webkit-font-smoothing: antialiased;*/
+}
+
+textarea[name=txt] {
+	color: #445162;
+	font-family: "Arial";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	padding: 2px 4px 0px 6px;
+	;
+}
+
+
+input[type="submit"] {
+	margin-top: 250px;
+
+}
+
+
+
+
+
+/* Style for "Shape 8" */
+button {
+	margin: 275px 400px 75px 450px;
+	width: 140px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	color: #445162;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+fieldset {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.contact-form {
+	margin-bottom: 20px;
+}
+
+.contact-form-wrapper {
+	height: 40px;
+}
+
+.contacts {
+	background-color: #445162;
+	min-height: 509px;
+}
+
+.contacts-data-info {
+	/*display: flex;
+	flex-direction: column;*/
+	margin: -454px 291px 200px 824px;
+}
+
+.contacts-data {
+	padding: 0 0 0 30px;
+	margin: 0 0 0 50px;
+	list-style-type: none;
+
+}
+
+
+
+
+
+.skype {
+	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
+	position: relative;
+}
+
+.skype:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	background-image: url(../img/Slice_11.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.icq {
+	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
+	position: relative;
+}
+
+.icq:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	background-image: url(../img/Slice_12.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.contact-email {
+	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
+	position: relative;
+}
+
+.contact-email:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	background-image: url(../img/Slice_13.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.phone-number {
+	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
+	position: relative;
+	/*padding-left: -20px;*/
+}
+
+.phone-number:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	background-image: url(../img/Slice_14.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.contacts-data li {
+	width: 180px;
+	list-style-type: none;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 10px 0px 10px 0px;
+}
+
+.footer-footer {
+	background-color: #ffffff;
+	width: 100%;
+	text-align: center;
+	height: 11px;
+	color: #445162;
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	margin-top: 100px;
+}
+
+.social-media {
+	min-height: 24px;
+	margin: -980px 0px 0px 850px;
+
+}
