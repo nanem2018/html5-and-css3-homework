@@ -1,29 +1,10 @@
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-/* подключение шрифта Arial MT через локальную папку файлом .ttf */
-@font-face {
-
-	font-family: 'Arial MT';
-
-	url('../fonts/arialmt.ttf') format('truetype'),
-
-	font-weight: normal;
-
-	font-style: normal;
-
-}
-
 body {
 	margin: 0 auto;
 	width: 1280px;
-
+	box-sizing: border-box;
 }
 
 main {
-
 	margin: 0 auto;
 	box-sizing: border-box;
 	width: 1280px;
@@ -100,6 +81,7 @@ main {
 	width: 469px;
 	height: 214px;
 	float: right;
+	margin-top: 20px;
 }
 
 .container-section {
@@ -111,63 +93,57 @@ main {
 	background-color: #ffffff;
 }
 
-
-
-
 .section-information-wrapper {
-	width: 100%;
-	float: left;
+	width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
 }
-
 
 /* оформление для "About your" */
 .title-section {
 	display: block;
-	width: 254px;
-	height: 28px;
+	width: 100%;
 	color: #445161;
 	font-family: "Arial";
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 36px;
-	margin: 49px 0px 50px 50px;
-	float: left;
+	box-sizing: border-box;
 }
 
-/* для параграфа задается оформление*/
+/* оформление для параграфа */
 
 .paragraph-text {
 	display: block;
 	width: 649px;
 	height: 63px;
+	padding: 10px 101px 20px 0px;
 	color: #333333;
 	font-family: "Arial";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	float: left;
-	padding-left: 50px;
-	clear: both;
+	align-items: flex-end;
+	box-sizing: border-box;
 }
 
 
 /* оформление для "video" */
-.section-product-video {
+video {
 	display: block;
 	background-color: #445161;
-	float: left;
-	margin: -160px 0px 20px 30px;
-	*/
-	/*position: relative;*/
-
+	margin: -120px 0 0 100px;
+	box-sizing: border-box;
 }
 
 .pluses {
-	width: 100%;
+	width: 1280px;
+	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #f5f5f5;
 }
 
 .pluses-title {
@@ -213,6 +189,7 @@ main {
 .pluses-list summary:before {
 	content: "+";
 	display: block;
+	line-height: 32px;
 	width: 32px;
 	height: 32px;
 	background-color: #445161;
@@ -229,9 +206,7 @@ details[open] summary:before {
 	content: "-";
 }
 
-
-
-/*Оформление блока krinshot*/
+/*Оформление блока skrinshot*/
 
 
 .screenshots {
@@ -295,9 +270,7 @@ details[open] summary:before {
 	text-align: justify;
 }
 
-/*    конец оформления с урока  ----*/
-
-
+/*    оформления блока reviews*/
 
 .reviews {
 	width: 100%;
@@ -337,19 +310,13 @@ details[open] summary:before {
 	height: 75px;
 	background-color: #445161;
 	border-radius: 100px;
-	/* Радиус скругления */
 	border: 1px solid grey;
-	/* Параметры рамки */
-	/* box-shadow: 0 0 7px #666; /* Параметры тени */
 	margin-left: 50px;
-
 }
 
 .reviews-photo-wrapper {
 	width: 359px;
 }
-
-
 
 .reviews-photo-txt {
 	padding: 15px;
@@ -378,11 +345,6 @@ details[open] summary:before {
 	border-right: 20px solid #ebebeb;
 }
 
-/* .reviews-photo-txt::after {
-    border-top: 10px solid aqua;
-    bottom: -19px; 
-   }*/
-
 .reviews-photo-signature {
 	display: block;
 	margin: 0 0 0 10px;
@@ -407,8 +369,6 @@ details[open] summary:before {
 	justify-content: space-evenly;
 	clear: both;
 	margin-top: 50px;
-
-
 }
 
 /* Style for title "Scrinshots" */
@@ -422,9 +382,6 @@ details[open] summary:before {
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 36px;
-
-
-
 }
 
 /* Style for "Pariatur i" */
@@ -438,7 +395,6 @@ details[open] summary:before {
 	line-height: 24px;
 	margin-top: 35px;
 	margin-left: 51px;
-
 }
 
 .child-text-one {
@@ -450,8 +406,6 @@ details[open] summary:before {
 	line-height: 24px;
 	margin-top: 10px;
 	margin-left: 20px;
-
-
 }
 
 .child-text-two {
@@ -463,315 +417,272 @@ details[open] summary:before {
 	line-height: 24px;
 	margin-top: 10px;
 	margin-left: 20px;
-
-
 }
 
-/*.buyit{
+/*оформление блока с ценами*/
+
+.container-prices {
 	width: 100%;
-	display: flex;
-	border:1px solid green;
-	min-height: 656px;
-	
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #ffffff;
 }
 
-*/
-.buyit {
-	display: flex;
-	/*	justify-content: space-evenly;*/
+
+.prices {
 	width: 100%;
-	min-height: 656px;
-	border: 1px solid black;
-	padding: 50px -50px 0 50px;
-	align-items: stretch;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-
-
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
 }
 
-.buy-title {
+.prices-title {
 	display: block;
-	margin-top: 50px;
-	color: #445161;
 	width: 100%;
-	height: 28px;
-	text-align: center;
-	font-family: "Arial";
+	margin: 0 0 30px 0;
+	font-family: Arial;
+	color: #445161;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 36px;
-	align-self: flex-start;
-
+	text-align: center;
 }
 
-
-.child-standart,
-.child-premium,
-.child-lux {
+.prices-item {
 	width: 300px;
-	margin: 5px;
-	background-color: #445162;
-	border: 1px solid black;
+	padding: 16px 0 20px 0;
+	background-color: #425062;
+	border-radius: 5px;
+}
+
+.prices-item-title {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 20px 0;
+	font-family: Arial;
 	color: #ffffff;
-	font-family: "Arial";
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 30px;
-	border: 1px solid #445162;
-	border-radius: 10px;
-	align-self: flex-end;
-
-	/*justify-content: flex-end;*/
+	text-align: center;
 }
 
-.price {
+.prices-item-price {
 	display: block;
-	background-color: #ffffff;
-	width: 300px;
-	height: 71px;
-	border: 2px solid #445162;
-	font-family: "Arial";
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 18px 10px;
+	box-sizing: border-box;
+	font-family: Arial;
+	color: #445162;
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 30px;
-	color: #445162;
-	;
 	text-align: center;
-	padding-top: 20px;
-	box-sizing: border-box;
-
+	background-color: #fff;
+	border: 2px solid #445162;
 }
 
-.child-standart {
-
-	min-height: 306px;
-
-}
-
-.child-premium {
-
-	min-height: 404px;
-}
-
-.child-lux {
-
-	min-height: 499px;
-}
-
-/* Style for "Buy it now" */
-
-
-.block-buy-title {
-	/* Style for "Premium" */
-	display: block;
-	width: 100%;
+.prices-item-list {
+	width: 242px;
+	margin: 0 0 20px 20px;
+	padding: 0;
+	list-style-position: inside;
+	font-family: Arial;
 	color: #ffffff;
-	font-family: "Arial";
-	font-size: 24px;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 30px;
-	text-align: center;
-
+	line-height: 24px;
+	text-align: left;
 }
 
-.standart {
-	width: 300px;
-
+.prices-item:nth-child(2) {
+	margin: 0 45px 0 0;
 }
 
-
-.premium {
-	width: 300px;
-
+.prices-item:nth-child(3) {
+	margin: 0 45px 0 0;
 }
 
-.lux {
-	width: 300px;
-
+.prices-item-btn {
+	display: block;
+	width: 260px;
+	padding: 14px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	border: 1px solid transparent;
 }
 
-form {
-	width: 100%
+.prices-item-btn:hover {
+	background-color: #445161;
+	border: 1px solid white;
 }
 
-.button-buy {
-	/*width: 260px;*/
-	height: 40px;
-	background-color: #ffffff;
-	width: 90%;
-	margin: 1px;
-	margin-left: 15px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+.prices-item-btn:hover .prices-item-btn_txt {
+	color: #fff;
 }
 
-b {
-	width: 37px;
-	height: 13px;
+.prices-item-btn:active {
+	background-color: #fff;
+	border: 1px solid white;
+}
+
+.prices-item-btn:active .prices-item-btn_txt {
 	color: #445161;
-	font-family: "Arial";
-	font-style: bold;
+}
+
+.prices-item-btn_txt {
+	font-family: Arial;
+	color: #445161;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 18px;
+	text-align: center;
 	text-transform: uppercase;
 }
+
+
+/*оформление блока footer*/
 
 .footer {
 	width: 100%;
-	min-height: 509px;
+
 }
 
-/* Style for "Contacts" */
-.contacts-title {
+.main-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1280px;
+	box-sizing: border-box;
+	padding: 50px;
+	background-color: #445161;
+}
+
+.main-footer_title {
 	display: block;
 	width: 100%;
-	padding: 53px 0px 31px 0px;
-	text-align: center;
+	margin: 0 0 30px 0;
+	font-family: Arial;
 	color: #ffffff;
-	font-family: "Arial";
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 36px;
-	box-sizing: border-box;
+	text-align: center;
 }
 
-input,
-textarea {
-	outline: none;
-	/* display: block */
-	;
-	padding: 0 0 0 5px;
-	margin: 0 0 10px 0;
+.main-footer_form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 500px;
+	margin: 0 46px 0 0;
+}
+
+.main-footer_form input[type="text"],
+.main-footer_form input[type="email"],
+.main-footer_form textarea {
+	width: 100%;
 	height: 40px;
-	min-width: 500px;
-	border-radius: 10px;
-	margin-left: 249px;
-	margin-bottom: 21px;
-
-}
-
-/*
-input[type=text] {
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #ffffff;
 	outline: none;
-	border: 1px solid #DDDDDD;
+	text-transform: capitalize;
 }
-*/
-/* Style for "Your name:" */
-input[type=text]::-webkit-placeholder {
-	width: 82px;
-	height: 12px;
+
+.main-footer_form input[type="text"]:hover,
+.main-footer_form input[type="email"]:hover,
+.main-footer_form textarea:hover {
+	background-color: gray;
+	color: white;
+	border-color: white;
+}
+
+.main-footer_form input[type="text"]:hover::placeholder,
+.main-footer_form input[type="email"]:hover::placeholder,
+.main-footer_form textarea:hover::placeholder {
+	color: white;
+}
+
+.main-footer_form textarea {
+	width: 500px;
+	height: 170px;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	background-color: #ffffff;
+	outline: none;
+	resize: none;
+}
+
+input[placeholder],
+textarea[placeholder] {
+	text-overflow: ellipsis;
+	font-family: Arial;
 	color: #445162;
-	font-family: "Arial";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	box-sizing: border-box;
-	margin-top: 18px;
-
+	text-align: left;
 }
 
-textarea {
-	resize: none;
-	width: 82px;
-	height: 170px;
-	border-radius: 10px;
-	margin-left: 249px;
-	box-sizing: border-box;
-}
-
-
-textarea::-webkit-placeholder {
-	width: 84px;
-	height: 12px;
+.main-footer_form input[type="submit"] {
+	border-radius: 5px;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-family: Arial;
 	color: #445162;
-	font-family: "Arial";
-	font-size: 15px;
-	font-weight: 40;
-	line-height: 22px;
-	/*-webkit-font-smoothing: antialiased;*/
-}
-
-textarea[name=txt] {
-	color: #445162;
-	font-family: "Arial";
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 22px;
-	padding: 2px 4px 0px 6px;
-	;
-}
-
-
-input[type="submit"] {
-	margin-top: 250px;
-
-}
-
-
-
-
-
-/* Style for "Shape 8" */
-button {
-	margin: 275px 400px 75px 450px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+	outline: none;
+	margin-left: 0px;
+	border: none;
 	width: 140px;
 	height: 40px;
+}
+
+
+.main-footer_form input[type="submit"]:hover {
+	background-color: gray;
+	color: white;
+}
+
+.main-footer_form input[type="submit"]:active {
 	background-color: #ffffff;
-	border-radius: 10px;
 	color: #445162;
+}
+
+.main-footer_contacts {
+	width: 240px;
+	height: 300px;
+	background-color: #445162;
+	color: #ffffff;
 	font-family: "Arial";
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 24px;
-	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
 }
-
-fieldset {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-}
-
-.contact-form {
-	margin-bottom: 20px;
-}
-
-.contact-form-wrapper {
-	height: 40px;
-}
-
-.contacts {
-	background-color: #445162;
-	min-height: 509px;
-}
-
-.contacts-data-info {
-	/*display: flex;
-	flex-direction: column;*/
-	margin: -454px 291px 200px 824px;
-}
-
-.contacts-data {
-	padding: 0 0 0 30px;
-	margin: 0 0 0 50px;
-	list-style-type: none;
-
-}
-
-
-
-
 
 .skype {
-	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
 	position: relative;
+	display: block;
+	margin: 10px 0 0px 30px;
 }
 
 .skype:before {
@@ -788,8 +699,8 @@ fieldset {
 }
 
 .icq {
-	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
 	position: relative;
+	margin: 15px 0 0px 30px;
 }
 
 .icq:before {
@@ -806,8 +717,8 @@ fieldset {
 }
 
 .contact-email {
-	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
 	position: relative;
+	margin: 15px 0 0 30px;
 }
 
 .contact-email:before {
@@ -824,9 +735,8 @@ fieldset {
 }
 
 .phone-number {
-	/* list-style-image: url('https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/512/Tick_Mark-128.png'); */
 	position: relative;
-	/*padding-left: -20px;*/
+	margin: 10px 0 20px 30px;
 }
 
 .phone-number:before {
@@ -842,33 +752,21 @@ fieldset {
 	background-size: cover;
 }
 
-.contacts-data li {
-	width: 180px;
-	list-style-type: none;
-	color: #ffffff;
-	font-family: "Arial";
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	margin: 10px 0px 10px 0px;
-}
-
 .footer-footer {
+	display: block;
 	background-color: #ffffff;
 	width: 100%;
+	box-sizing: border-box;
 	text-align: center;
-	height: 11px;
 	color: #445162;
 	font-family: "Arial";
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 24px;
 	letter-spacing: 0.3px;
-	margin-top: 100px;
+	margin: 0 auto;
 }
 
 .social-media {
-	min-height: 24px;
-	margin: -980px 0px 0px 850px;
-
+	display: block;
 }
