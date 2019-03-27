@@ -1,0 +1,444 @@
+@font-face {
+	font-family: montserrat;
+	src: url(../fonts/montserrat/montserrat-regular.ttf);
+}
+
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/raleway/raleway-regular.ttf);
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto/roboto-regular.ttf);
+}
+
+body {
+	margin: 0 auto;
+	width: 1920px;
+	background-color: dimgrey;
+
+}
+
+.header {
+	width: 100%;
+	min-height: 1024px;
+	background-image: url(../img/img-header.png);
+	background-repeat: no-repeat;
+	/*border: 5px solid aqua;*/
+}
+
+.logo {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 181px;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 40px 0 0 376px;
+	;
+}
+
+.logo-svg {
+	fill: #fff;
+
+}
+
+.logo-txt {
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 400;
+	text-align: right;
+}
+
+.logo:hover .logo-svg {
+	fill: #998675;
+	stroke: #fff;
+}
+
+.logo:hover .logo-txt {
+	color: #998675;
+}
+
+.main-nav {
+	display: block;
+	/*	border: 1px solid red;*/
+	margin-left: 776px;
+	margin-top: -70px;
+}
+
+.main-nav__menu {
+	/*border: 1px solid black;*/
+	padding: 0;
+	height: 50px;
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+.main-nav__li {
+	list-style-type: none;
+	/*	border: 1px solid yellow;*/
+	margin-right: 30px;
+}
+
+.main-nav__li a {
+	text-decoration: none;
+	color: black;
+	/*border: 1px solid green;*/
+	display: flex;
+	height: 100%;
+	color: #ffffff;
+	font-family: montserrat;
+	font-size: 14px;
+	font-weight: 300;
+	/*   text-align: center;
+  line-height: 50px; */
+}
+
+.main-nav__li a:hover {
+
+	color: #c7b299;
+	font-family: montserrat;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.main-nav__li a span {
+	margin: auto;
+}
+
+
+input[type="search"] {
+	width: 24px;
+	height: 24px;
+	outline: none;
+	background-image: url(../img/icon-search.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* Style for "icon-searc" */
+	margin-top: 12px;
+	margin-left: 28px;
+	background-color: #ffffff;
+	background-color: transparent;
+	border: transparent;
+}
+
+
+
+.icon-cart {
+	display: flex;
+	padding: 0;
+	margin: 0 0 0 43px;
+	border: 0;
+	/*border-radius:40px;*/
+	background-color: transparent;
+
+	overflow: hidden;
+}
+
+
+
+
+input[type="search"]:focus {
+	width: 300px;
+	transition: width 1s ease-out;
+	background-position: right;
+
+}
+
+.head-center {
+	display: flex;
+	justify-content: center;
+	margin-top: 381px;
+	flex-wrap: wrap;
+}
+
+
+.arrows-left {
+	width: 40px;
+	height: 73px;
+	color: #ffffff;
+	background-color: transparent;
+	border: 2px soid red;
+	opacity: 0.5;
+	/*margin:475px 0 476px 150px;*/
+}
+
+svd {
+	fill: red;
+}
+
+.arrows-right {
+	width: 40px;
+	height: 73px;
+	color: #ffffff;
+	background-color: transparent;
+	opacity: 0.5;
+	border: 2px soid red;
+	/*margin:475px 0 476px 150px;*/
+}
+
+.slogan-main {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: -400px;
+	box-sizing: border-box;
+}
+
+.slogan-main-title {
+	display: block;
+	width: 100%;
+	/* Style for "Unique and" */
+	height: 34px;
+	color: #ffffff;
+	font-family: raleway;
+	font-size: 36px;
+	font-weight: 500;
+	margin: 200px 0 0 0;
+}
+
+.slogan-main-psd {
+	/* Style for "Portfolio" */
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #ffffff;
+	font-family: raleway-extrabold, "Arial";
+	font-size: 52px;
+	font-weight: 400;
+	margin: 14px 0 19px 0;
+}
+
+
+.slogan-txt {
+	/* Style for "Nam liber" */
+	width: 100%;
+	height: 39px;
+	color: #ffffff;
+	font-family: montserrat, "Arial";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.btn {
+	display: flex;
+	width: 170px;
+	min-height: 50px;
+	border-radius: 3px;
+	background-color: #998675;
+	margin-left: 876px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom: 3px solid #736356;
+	margin-top: 50px;
+}
+
+.btn:hover {
+	background-color: #736356;
+	border-bottom: 3px solid #998675;
+}
+
+.btn:hover .btn-txt {
+	color: #ccc;
+}
+
+.btn:active .btn-txt {
+	color: #fff;
+}
+
+.btn-txt {
+	margin: auto;
+	font-family: raleway;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 23px;
+	text-align: center;
+}
+
+
+.slider-arrow-left {
+	/* border: 1px solid black; */
+	display: block;
+	width: 40px;
+	height: 73px;
+	position: relative;
+	margin: 5px 1530px 0 0;
+}
+
+.slider-arrow-left:after {
+	content: "";
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	border-top: 2px solid #d3c1ad;
+	border-right: 2px solid #d3c1ad;
+	transform: rotate(225deg);
+	position: absolute;
+	top: 10px;
+	left: -25px;
+}
+
+.slider-arrow-left:hover:after {
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+
+.slider-arrow-right {
+	/* border: 1px solid black; */
+	display: block;
+	width: 40px;
+	height: 73px;
+	position: relative;
+	margin: -150px 0 0 1580px;
+}
+
+.slider-arrow-right:after {
+	content: "";
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	border-top: 2px solid #d3c1ad;
+	border-right: 2px solid #d3c1ad;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 10px;
+	left: -25px;
+}
+
+.slider-arrow-right:hover:after {
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.serveses {
+	display: flex;
+	width: 100%;
+	height: 373px;
+	background-color: #ffffff;
+	justify-content: center;
+}
+
+.category-title {
+	/* Style for "Web & App" */
+	display: block;
+	margin: 29px 0 19px 37px;
+	text-align: center;
+	width: 195px;
+	height: 21px;
+	color: #555555;
+	font-family: "Raleway - Semi Bold";
+	font-size: 22px;
+	font-weight: 400;
+
+}
+
+.category-text {
+	/* Style for "Nam liber" */
+	display: block;
+	width: 266px;
+	height: 62px;
+	color: #8c8c8c;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-decoration: none;
+	text-align: center;
+
+
+}
+
+.icon {
+	fill: #555555;
+	width: 49px;
+	height: 49px;
+	margin: 81px 0 0 109px;
+
+}
+
+.icon:hover {
+	fill: #c7b299;
+}
+
+.category {
+	width: 266px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.category:after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 5px;
+	background-color: #f1eee9;
+	margin: 0 auto;
+	align-self: flex-end;
+}
+
+.category:hover:after {
+
+	background-color: #c7b299;
+
+}
+
+.bg {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1920px;
+	height: 700px;
+	background-color: #fbfaf8;
+	/*border: 1px solid orange;*/
+}
+
+.bg-title {
+	/* Style for "Waxom is R" */
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #555555;
+	font-family: raleway-semibold;
+	font-size: 30px;
+	font-weight: 400;
+	/*border: 1px solid black;*/
+	margin: 83px 0 0 0;
+}
+
+.bg-txt {
+	/* Style for "Investigat" */
+	display: block;
+	width: 40%;
+	text-align: center;
+	height: 43px;
+	color: #8c8c8c;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+	/*border: 1px solid aqua;*/
+	margin: 19px 580px 0 583px;
+	box-sizing: border-box;
+
+}
+
+.imgbox {
+	margin: auto;
+	width: 770px;
+	height: 480px;
+	padding: 40px;
+	background-image: url(../img/browser-center.png), url(../img/browser-left.png), url(../img/browser-right.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: center, left, right;
+	background-size: 80%, 60%, 80%;
+	background-clip: content-box;
+
+}
